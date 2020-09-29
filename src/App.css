@@ -1,38 +1,453 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'font_1';
+  src: url('./fonts/font_1.ttf' ) format("truetype-variations"); 
+  font-weight: 1 50;
 }
 
-.App-logo {
-  height: 40vmin;
+@font-face {
+  font-family: 'font_2';
+  src: url('./fonts/font_2.ttf' ) format("truetype-variations"); 
+  font-weight: 1 100;
+}
+
+@font-face {
+  font-family: 'font_3';
+  src: url('./fonts/font_3.ttf' ) format("truetype-variations"); 
+  font-weight: 1 50;
+}
+
+@font-face {
+  font-family: 'font_4';
+  src: url('./fonts/font_4.ttf' ) format("truetype-variations"); 
+  font-weight: 100 300;
+}
+
+@font-face {
+  font-family: 'font_4';
+  src: url('./fonts/font_4.ttf' ) format("truetype-variations"); 
+  font-weight: 100 300;
+}
+
+
+@font-face {
+  font-family: 'ex1_font';
+  src: url('./fonts/ex1_font.ttf' ) format("truetype-variations"); 
+  font-weight: 100 300;
+}
+
+
+@font-face {
+  font-family: 'ex2_font';
+  src: url('./fonts/ex2_font.ttf' ) format("truetype-variations"); 
+  font-weight: 0 100;
+}
+
+@font-face {
+  font-family: 'font_6';
+  src: url('./fonts/font_6.ttf' ) format("truetype-variations"); 
+  font-weight: 0 100;
+}
+
+@font-face {
+  font-family: 'font_7';
+  src: url('./fonts/font_7.ttf' ) format("truetype-variations"); 
+  font-weight: 0 100;
+}
+
+@font-face {
+  font-family: 'font_8';
+  src: url('./fonts/font_8.ttf' ) format("truetype-variations"); 
+  font-weight: 0 100;
+}
+
+
+@font-face {
+  font-family: 'font_10';
+  src: url('./fonts/font_10.ttf' ) format("truetype-variations"); 
+  font-weight: 0 100;
+}
+
+@font-face {
+  font-family: 'font_11';
+  src: url('./fonts/font_11.ttf' ) format("truetype-variations"); 
+  font-weight: 0 100;
+}
+
+@font-face {
+  font-family: 'font_12';
+  src: url('./fonts/font_12.ttf' ) format("truetype-variations"); 
+  font-weight: 0 100;
+}
+
+@font-face {
+  font-family: 'font_13';
+  src: url('./fonts/font_13.ttf' ) format("truetype-variations"); 
+  font-weight: 0 100;
+}
+
+@font-face {
+  font-family: 'font_14';
+  src: url('./fonts/font_14.ttf' ) format("truetype-variations"); 
+  font-weight: 0 100;
+}
+
+@font-face {
+  font-family: 'font_15';
+  src: url('./fonts/font_15.ttf' ) format("truetype-variations"); 
+  font-weight: 0 100;
+}
+
+@font-face {
+  font-family: 'font_16';
+  src: url('./fonts/font_16.ttf' ) format("truetype-variations"); 
+  font-weight: 0 100;
+}
+
+@font-face {
+  font-family: 'font_17';
+  src: url('./fonts/font_17.ttf' ) format("truetype-variations"); 
+  font-weight: 0 100;
+}
+
+@font-face {
+  font-family: 'rom';
+  src: url('./fonts/rom.ttf' ) format("truetype-variations"); 
+  font-weight: 1 800;
+}
+
+@font-face { font-family: 'NotoSerifKR'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+button, input[type="submit"], input[type="reset"] {
+  -webkit-appearance:none;
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+  outline: none;
+}
+
+
+/* 2em, 1.1em */
+
+body{
+  
+	margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* background-color: blue; */
+    
+}
+
+.header{
+  position: absolute;
+  font-size: 1.8em;
+  font-family: rom;
+  margin-top: 0.5em;
+  margin-left: 0.7em;
+  z-index:9;
+}
+
+#hanguelggol{
+  position: absolute;
+  /* background-color: white; */
+  font-weight: 300;
+
+
+}
+
+#workshop{
+  position: absolute;
+  /* background-color: blue; */
+  margin-left: 20%;
+
+}
+
+#archive{
+  position: absolute;
+  /* background-color: aqua; */
+  margin-left: 50%;
+  
+}
+
+#left_archive_page{
+  position: absolute;
+  background-color: white;
+}
+
+
+#right_archive_page{
+  position: absolute;
+  background-color: white;
+}
+
+
+
+#background{
+  position: absolute;
+  background-color: white;
+  font-size: 7em;
+  width:100vw;
+  height:100vh;
+}
+
+#desc{
+  position : absolute;
+  /* background-color: brown; */
+  word-break: keep-all;
+  font-family: NotoSerifKR;
+  font-weight: lighter ;
+  font-size :1.1em;
+  width:26vw;
+  line-height: 1.7em;
+  color : white;
+  font-family: NotoSerifKR;
+  pointer-events: none;
+
+}
+
+
+
+#fontlist{
+  position: absolute;
+  /* background-color: pink; */
+  right:0px;
+  height: auto;
+  
+  top:0px;
+}
+
+.font_button{
+  width: 100%;
+  text-align: right;
+  font-size: 1.6em;
+  padding-top: 0.2em;
+  font-family: NotoSerifKR;
+  /* padding-bottom: 3px; */
+}
+
+#bt_1{
+  /* background-color: darkgreen; */
+  padding-top: 0em;
+  color : blue;
+}
+
+#bt_2{
+  /* background-color: darkmagenta; */
+  
+}
+
+#bt_three{
+  /* background-color: darksalmon; */
+}
+
+#showroom{
+  position: fixed;
+  top: 0px;
+  /* background-color: pink; */
+  width: 100%;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+#wordroom{
+  z-index: 2;
+  /* background-color: blue; */
+  font-family: 'font_1';
+  font-size: 100vw;
+  margin-top: -45vw;
+  margin-left: -5vw;
+  /* overflow: hidden; */
+  width: 100%;
+  line-height: normal;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#vertical{
+  top:0px;
+  left:0px;
+  position: fixed;
+  background-color :blue;
+  width:0.1vw;
+  height:100vh;
+  z-index: 10;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#horizental{
+  bottom:0px;
+  left:0px;
+  position: fixed;
+  background-color: blue;
+  width:100vw;
+  height:0.1vw;
+  z-index: 10;
 }
 
-.App-link {
-  color: #61dafb;
+#logo{
+  position: fixed;
+  /* background-color: gray; */
+  left:0px;
+  width:auto;
+  top:0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logopiece{
+  position: fixed;
+  /* background-color: gray; */
+  left:0px;
+  width:auto;
+  top:0px;
+  
 }
+
+
+#fontdesc{
+  position: fixed;
+  font-family: NotoSerifKR;
+  font-weight: lighter ;
+  font-size :1.2em;
+  width:23vw;
+  line-height: 1.6em;
+  word-break: keep-all;
+  /* bottom: 0px; */
+  
+}
+
+
+#background{
+  height:100vh;
+  weight:100vw;
+  /* background-color: green; */
+ 
+}
+
+#btline{
+  width:100%;
+  height:0.1vw;
+  /* background-color: hotpink; */
+}
+
+/* 
+@keyframes breathe {
+  0% {
+    font-variation-settings: 'ital' 0;
+  }
+
+  50% {
+    font-variation-settings: 'ital' 100;
+  }
+
+  100% {
+    font-variation-settings: 'ital' 0;
+  }
+} */
+#logo{
+  display:none;
+}
+
+
+
+#imgcon{
+  position: absolute;
+  left:0;
+  background-color: white;
+}
+
+
+#workshop_page_clip{
+  position : absolute;
+  overflow-y: scroll;
+  background-color: white;
+  
+
+}
+
+
+#imgdesc{
+  font-family: NotoSerifKR;
+  font-weight: lighter ;
+  font-size :1.2em;
+
+  line-height: 1.6em;
+  position:fixed;
+  left:10px;
+  width:20px;
+  height: 100%;
+  background-color: white;
+  word-break: keep-all;
+}
+
+#wk_1{
+  width:100%;
+}
+
+#wk_2{
+  width:100%;
+}
+#wk_3{
+  width:100%;
+}
+#wk_4{
+  width:100%;
+}
+#wk_5{
+  width:100%;
+}
+
+.wkimg{
+  padding-bottom: 20px;
+}
+#poster{
+  position: relative;
+  width:100%;
+}
+#video{
+  width:100%;
+  height: 100px;
+  padding-bottom: 20px;
+
+}
+
+
+#downmouse{
+  position: fixed;
+  z-index: 30;
+  width:15vw;
+  height:auto;
+  top:0px;
+  left:0px;
+  pointer-events: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#screendetect{
+  color : black;
+  font-size: 2em;
+  position : absolute;
+  top : 0px;
+  left: 0px;
+  height:100vh;
+  z-index: 100;
+  width:100vw;
+  background-color : white;
+  
+}
+
+#loading{
+  position : absolute;
+  top : 0px;
+  left: 0px;
+  height:100vh;
+  z-index: 101;
+  width:100vw;
+  background-color : white;
+  
+}
+/* #screeninfo{
+  position: pixed;
+  z-index: 200;
+} */
