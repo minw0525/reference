@@ -425,19 +425,22 @@ body{
 }
 
 #screendetect{
-  color : black;
-  font-size: 2em;
+
+  color : white;
+  font-size: 1.2em;
+  line-height: 1.5em;
   position : absolute;
   top : 0px;
   left: 0px;
   height:100vh;
   z-index: 100;
   width:100vw;
-  background-color : white;
+  background-color : black;
   
 }
 
 #loading{
+
   position : absolute;
   top : 0px;
   left: 0px;
@@ -446,6 +449,26 @@ body{
   width:100vw;
   background-color : white;
   
+}
+
+#screenlogo{
+  position : absolute;
+  top : 0px;
+  left: 0px;
+  width:60vw;
+
+  z-index: 300;
+  /* width:30vw; */
+  background-color : black;
+  
+}
+
+#warn{
+  position : absolute;
+  width : auto;
+  text-align: center;
+  /* color : blue; */
+  /* background-color: pink; */
 }
 /* #screeninfo{
   position: pixed;

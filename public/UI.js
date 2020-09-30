@@ -14,7 +14,17 @@ $(window).width();
 window.onload = function() { //실행될 코드 }
     if ($(window).width() > 1450){
         document.getElementById('screendetect').style.display = 'none'
+        document.getElementById('warn').style.display = 'none'
+        document.getElementById('screenlogo').style.display = 'none'
     }
+
+    var screenlogo = document.getElementById('screenlogo')
+    screenlogo.style.marginLeft= window.innerWidth/2 - $("#screenlogo").width()/2 + 'px';
+    screenlogo.style.marginTop= window.innerHeight/2 - $("#screenlogo").height()/1.5 + 'px';
+
+    var warn = document.getElementById('warn')
+    warn.style.marginLeft= window.innerWidth/2 - $("#warn").width()/2 + 'px';
+    warn.style.marginTop= window.innerHeight - $("#warn").height()*3 + 'px';
 
     document.getElementById('loading').style.display = 'none'
     var right_archive_page = document.getElementById('right_archive_page')

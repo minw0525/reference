@@ -1104,8 +1104,10 @@ function App() {
           
 
           </div>
+          
        
       </animated.div> 
+      <img id = 'screenlogo' src={logo}/>
       {/* <img id = 'downmouse' src={downmouse}></img> */}
     
 
