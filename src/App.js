@@ -156,7 +156,7 @@ function App() {
     $("#wordroom").css("margin-top", '-45vw');
     $("#wordroom").css("margin-left", '-5vw');
     $("#wordroom").css("line-height", 'normal');
-    $("#fontdesc").html('곽서영<br><br>어슷썰은 끝획의 비스듬한 모양이 어슷썬 채소의 모양과 비슷한 듯 하여 붙여준 이름이다. 스텐실처럼 열린 속공간의 글자가 볼드해질 때 연결부가 어떻게 결합되는지를 배리어블을 통해 나타내고자 했다. ');
+    $("#fontdesc").html('문서연<br><br>방향이 제각기 난 선들의 길이가 늘어나고 줄어듬에 따라 단어의 웨이트가 변하는 모션을 제작했다. 결의 최대 웨이트 값은 선들의 포개어진 정도를 제일 효과적으로 보여준다. ');
     axes = 1
     Hmin = 0
     Hmax = 52
@@ -169,7 +169,7 @@ function App() {
     $("#wordroom").css("margin-top", '12vw');
     $("#wordroom").css("margin-left", '2vw');
     $("#wordroom").css("line-height", 'normal');
-    $("#fontdesc").html('권순형<br><br>궁체 정자가 반흘림체로 변화한다. 흘겨씀에 따라 생기는 글자 간의 이음다리와 바뀌는 자소의 모양새, 두드러지는 필압 차이에 주목했다. 한글자 한글자의 외곽 생김새가 다른 단어, 백여덟에 이를 담아냈다. ');
+    $("#fontdesc").html('이수현<br><br>시간에 따라 그림자의 길이가 변하는 모습을 베리어블 폰트로 표현하였다. 그림자의 변화로 글자의 다양한 무게감을 느낄 수 있다.');
     axes = 1
     Hmin = 0
     Hmax = 102
@@ -992,7 +992,7 @@ function App() {
 
       <animated.div id ='left_archive_page' style={ArchiveOpenAnimation_Left}>
         <div id = 'fontdesc'>
-        곽서영<br></br><br></br>어슷썰은 끝획의 비스듬한 모양이 어슷썬 채소의 모양과 비슷한 듯 하여 붙여준 이름이다. 스텐실처럼 열린 속공간의 글자가 볼드해질 때 연결부가 어떻게 결합되는지를 배리어블을 통해 나타내고자 했다. 
+        문서연<br></br><br></br>방향이 제각기 난 선들의 길이가 늘어나고 줄어듬에 따라 단어의 웨이트가 변하는 모션을 제작했다. '결'의 최대 웨이트 값은 선들의 포개어진 정도를 제일 효과적으로 보여준다. 
         </div>
 
         <div id = 'btline'>
