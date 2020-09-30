@@ -115,6 +115,12 @@
   font-weight: 1 800;
 }
 
+@font-face {
+  font-family: 'font_100';
+  src: url('./fonts/font_100.ttf' ) format("truetype-variations"); 
+  font-weight: 1 100;
+}
+
 @font-face { font-family: 'NotoSerifKR'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff'); font-weight: normal; font-style: normal; }
 
 button, input[type="submit"], input[type="reset"] {

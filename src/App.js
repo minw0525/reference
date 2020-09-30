@@ -397,6 +397,20 @@ function App() {
     Ymax = 101
   }
 
+  function font_100() {
+    $("#wordroom").html('A');
+    $("#wordroom").css("font-family", 'font_100');
+    $("#wordroom").css("font-size", '60vw');
+    $("#wordroom").css("margin-top", '-25vw');
+    $("#wordroom").css("margin-left", '8vw');
+    $("#wordroom").css("line-height", 'normal');
+    $("#fontdesc").html('장서영<br><br>이동함에 따라 바뀌는 공간의 형태를 베리어블 폰트를 이용해 연속적으로 표현했다. 2점투시를 기반으로 면적을 변화시켜 3차원의 모형으로 보이도록 유도했다.');
+   
+    axes = 1
+    Hmin = 0
+    Hmax = 101
+  }
+
   function getRatioH() {
     var ratio = width / (Hmax - Hmin)
     var value = Math.round(mouse.x / ratio * 100) / 100
@@ -1005,6 +1019,9 @@ function App() {
             </button>
             <button id = 'bt_2' class = 'font_button' onClick={font_2}>
               그림자
+            </button>
+            <button id = 'bt_100' class = 'font_button' onClick={font_100}>
+              공간
             </button>
             <button id = 'bt_3' class = 'font_button' onClick={font_3}>
               꽃
