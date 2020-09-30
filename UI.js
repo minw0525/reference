@@ -12,6 +12,8 @@ $(window).width();
 
 
 window.onload = function() { //실행될 코드 }
+   
+
     if ($(window).width() > 1450){
         document.getElementById('screendetect').style.display = 'none'
         document.getElementById('warn').style.display = 'none'
@@ -19,6 +21,8 @@ window.onload = function() { //실행될 코드 }
     }
 
     var screenlogo = document.getElementById('screenlogo')
+
+    
     screenlogo.style.marginLeft= window.innerWidth/2 - $("#screenlogo").width()/2 + 'px';
     screenlogo.style.marginTop= window.innerHeight/2 - $("#screenlogo").height()/1.5 + 'px';
 
