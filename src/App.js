@@ -922,7 +922,7 @@ function App() {
           }
        
 			}} >
-        Hanguelggol
+        Hangeulggol
       </animated.button>
 
       <animated.button style={WorkshopHover_A} class = 'header'id ='workshop' onClick={()=> {
