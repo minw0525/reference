@@ -14,7 +14,7 @@ $(window).width();
 window.onload = function() { //실행될 코드 }
    
 
-    if ($(window).width() > 1450){
+    if ($(window).width() > 1420){
         document.getElementById('screendetect').style.display = 'none'
         document.getElementById('warn').style.display = 'none'
         document.getElementById('screenlogo').style.display = 'none'
